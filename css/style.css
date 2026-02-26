@@ -679,10 +679,10 @@
   justify-content: start;
   flex-direction: column;
   margin-bottom: 20px;
-  border-radius: 0 16px 16px 0;
+  border-radius: 16px;
   background-color: var(--color-bg-1);
   padding: 30px 30px 30px 60px;
-  border-left: 6px solid var(--color-primary);
+  border-bottom: 4px solid var(--text-color-1);
   height: 165px;
 }
 .contacts__col {
