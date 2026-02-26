@@ -121,12 +121,12 @@
 }
 
 .header__phones {
-  margin-right: 35px;
+  margin-right: 20px;
 }
 
 .header__phone {
   color: var(--text-color-3);
-  font-size: clamp(10px, 25px, 4.3vw);
+  font-size: clamp(10px, 25px, 4.5vw);
   font-weight: 700;
   margin-bottom: 5px;
   transition: .3s;
@@ -652,7 +652,7 @@
 }
 .calculator__notice {
   font-size: clamp(18px, 20px, 2.7vw);
-  font-weight: 500;
+  font-weight: 400;
   color: var(--text-color-2);
   text-align: center;
 }
@@ -786,6 +786,9 @@
     padding: 10% 0;
   }
   /* HEADER ===================== */
+  .header__top-button {
+    padding: 20px 25px;;
+  }
   /* CEILING ==================== */
   
   .ceiling.section-padding {
@@ -972,6 +975,9 @@
   }
   .header__heading {
     font-size: clamp(10px, 62px, 11.3vw);
+  }
+  .header__phone {
+    font-size: clamp(10px, 25px, 5.2vw);
   }
   
   /* CEILING ==================== */
