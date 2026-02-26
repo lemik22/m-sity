@@ -1,0 +1,1017 @@
+/* GLOBAL ==================== */
+/* GLOBAL ==================== */
+:root {
+  --color-primary: #e42d2d;
+  --color-secondary: #d10b0b;
+  --color-hover: #e42d2de8;
+  --color-bg-1: #f0f0f0;
+  --text-color-1: #202020;
+  --text-color-2: #262626;
+  --text-color-3: #000;
+  --text-color-4: #fff;
+}
+
+.wrapper {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  line-height: 1;
+  overflow-x: hidden;
+  color: var(--text-color-1);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1230px;
+  padding: 0 15px;
+  height: 100%;
+}
+
+.button {
+  display: inline-block;
+  padding: 20px 36px;
+  border-radius: 8px;
+  background: var(--color-primary);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+.button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+.button-text {
+  color: var(--text-color-4);
+  /* font-size: 24px; */
+  font-size: clamp(10px, 24px, 4vw);
+  font-weight: 500;
+  white-space: nowrap;
+}
+.heading {
+  font-size: clamp(25px, 42px, 8vw);
+  color: var(--text-color-3);
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.button--small {
+  padding: 10px 18px;
+}
+.button-text--small {
+  font-size: 18px;
+}
+
+.h2 {
+  font-size: clamp(10px, 34px, 7vw);
+  color: var(--text-color-1);
+  font-weight: 700;
+}
+
+.heading--center {
+  text-align: center;
+}
+
+.section-padding {
+  padding: 4% 0;
+}
+
+
+
+/* HEADER ================== */
+/* HEADER ================== */
+
+.header {
+  padding-top: 20px;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.header__top-container {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo-wrapp {
+  width: auto;
+  flex-grow: 1;
+  margin-right: 20px;
+}
+
+.header__nav {
+  padding-top: 8px;
+}
+
+.header__nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.header__nav-item {
+  margin-right: 20px;
+  font-size: 24px;
+  font-weight: 500;
+  transition: .3s;
+}
+.header__nav-item:hover {
+  color: var(--color-hover);
+}
+
+.header__phones {
+  margin-right: 35px;
+}
+
+.header__phone {
+  color: var(--text-color-3);
+  font-size: clamp(10px, 25px, 4.3vw);
+  font-weight: 700;
+  margin-bottom: 5px;
+  transition: .3s;
+}
+.header__phone:last-child {
+  margin-bottom: 0;
+}
+.header__phone:hover {
+  color: var(--color-hover);
+}
+
+.header__banner {
+  padding: 6% 0;
+  background-image: url('../images/main-background2.jpg');
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.header__heading {
+  font-size: clamp(10px, 62px, 8.3vw);
+}
+
+.header__benefits {
+  margin-bottom: 30px;
+}
+.header__benefit {
+  position: relative;
+  /* font-size: 27px; */
+  font-size: clamp(10px, 27px, 5.3vw);
+  
+  font-weight: 500;
+  padding-left: 20px;
+  margin-bottom: 25px;
+  white-space: nowrap;
+}
+
+.header__benefit:last-child {
+  margin-bottom: 0;
+}
+
+.header__benefit::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--color-secondary);
+}
+
+/* CEILING ====================== */
+/* CEILING ====================== */
+
+.ceiling__tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.ceiling__tab {
+  width: 20%;
+  text-align: center;
+}
+.ceiling__tab-button {
+  padding: 15px 0;
+  background-color: var(--color-bg-1);
+  font-size: clamp(10px, 25px, 5.3vw);
+  width: 100%;
+  height: 100%;
+  color: var(--text-color-2);
+  text-wrap: nowrap;
+  
+  transition: .3s;
+}
+.ceiling__tab-button:hover {
+  background: var(--color-hover);
+  color: var(--text-color-4);
+}
+
+.ceiling__tab:first-child .ceiling__tab-button {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.ceiling__tab:last-child .ceiling__tab-button {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.ceiling__tab-button.active {
+  background-color: var(--color-primary);
+  color: var(--text-color-4);
+}
+
+.ceiling__content {
+  display: none;
+}
+.ceiling__content.active {
+  display: block;
+}
+.ceiling__top {
+  display: flex;
+  justify-content: space-between;
+  /* margin-bottom: 30px; */
+}
+
+.ceiling__top-column {
+  width: 48%;
+  overflow: hidden;
+}
+
+
+.ceiling__top-image {
+  border-radius: 4px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.ceiling__info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.ceiling__info * {
+  margin-bottom: 20px;
+}
+.ceiling__info *:last-child {
+  margin-bottom: 0;
+}
+
+.ceiling__desc-title {
+  font-size: clamp(10px, 24px, 5vw);
+  margin-bottom: 20px;
+}
+
+.ceiling__desc-item {
+  position: relative;
+  margin-bottom: 15px;
+  font-size: clamp(10px, 22px, 4.6vw);
+  padding-left: 15px;
+}
+.ceiling__desc-item::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 0;
+  transform: translateY(-50%);
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--color-secondary);
+}
+
+.ceiling__desc-item:last-child {
+  margin-bottom: 0;
+}
+
+.ceiling__price {
+  color: var(--color-primary);
+  font-size: clamp(10px, 32px, 7vw);
+  font-weight: 700;
+}
+
+.ceiling__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ceiling__bottom-image {
+  width: 24%;
+  border-radius: 4px;
+}
+
+/* GALERY ================ */
+/* GALERY ================ */
+
+.gallery__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery__slider {
+  width: 100%;
+  height: 300px;
+}
+.gallery__slide {
+  height: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.gallery__slide img {
+  background-color: gray;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center; /* можно менять */
+  display: block;
+  cursor: pointer;
+}
+.gallery__nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+  width: 200px;
+  height: 40px;
+  position: relative;
+  margin-top: 20px;
+}
+.gallery__nav .gallery__button {
+  position: relative;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin-top: 0;
+  background: var(--color-primary);
+  border-radius: 8px;
+  min-width: 40px;
+  height: 40px;
+  background-image: url("../images/icons/arrow-up.svg");
+  background-position: 0 -1px;
+  transition: .3s;
+}
+.gallery__button:hover {
+  scale: 1.05;
+}
+
+.gallery__button-prev {
+  rotate: 270deg;
+}
+.gallery__button-next {
+  rotate: 90deg;
+}
+
+.gallery__button svg {
+  display: none;
+}
+
+
+.gallery__pagination.swiper-pagination {
+  position: relative;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+.gallery__pagination span {
+  background: var(--text-color-1);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.gallery__pagination .swiper-pagination-bullet-active {
+  background: var(--color-primary);
+  
+}
+
+
+/* GALLERY MODAL ============= */
+/* GALLERY MODAL ============= */
+
+.gallery-modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 9999;
+}
+
+.gallery-modal.active {
+  display: flex;
+}
+
+.gallery-modal__img {
+  max-width: 95%;
+  max-height: 95%;
+  object-fit: contain;
+}
+
+.gallery-modal__close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: #fff;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.gallery-modal__overlay {
+  position: absolute;
+  inset: 0;
+}
+
+/* CALCULATOR ==================== */
+/* CALCULATOR ==================== */
+
+.calculator {
+  background-color: var(--color-bg-1);
+}
+
+.calculator__inner {
+  display: flex;
+  justify-content: center;
+}
+.calculator__form-wrapp {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.calculator__form {
+  display: flex;
+  flex-direction: column;
+  column-gap: 6vw;
+}
+.calculator__heading {
+  display: inline-block;
+}
+.calculator__block {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  align-items: center;
+}
+
+.calculator__block-title {
+  font-size: clamp(10px, 26px, 6vw);
+  color: var(--text-color-1);
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 20px;
+  text-wrap: nowrap;
+}
+
+
+.calculator__tabs {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+
+}
+.calculator__tab {
+  /* width: 10%; */
+  margin-bottom: 5px;
+}
+.calculator__tab-button {
+  text-align: left;
+  padding: 10px;
+  background-color: var(--color-bg-1);
+  font-size: clamp(10px, 24px, 4.3vw);
+  width: 100%;
+  height: 100%;
+  color: var(--text-color-2);
+  border-radius: 8px;
+  border: 1px solid black;
+  transition: .3s;
+  text-wrap: nowrap;
+}
+.calculator__tab-button:hover {
+  background: var(--color-hover);
+  color: var(--text-color-4);
+  border-color: var(--color-bg-1);
+}
+.calculator__tab:first-child .ceiling__tab-button {
+  border-radius: 8px 0 0 8px;
+}
+.calculator__tab:last-child .ceiling__tab-button {
+  border-radius: 0 8px 8px 0;
+}
+.calculator__tab-button.active {
+  background-color: var(--color-primary);
+  color: var(--text-color-4);
+  border-color: var(--color-bg-1);
+}
+
+.calculator__inputs {
+  display: flex;
+  gap: 20px;
+}
+
+.calculator__input-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.calculator__input-title sup {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.calculator__input-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.calculator__square-value-wrapp {
+  display: inline-flex;
+  justify-content: start;
+  margin-right: 6px;
+  width: 50px;
+  font-size: 26px;
+}
+/* .calculator__square-value {
+} */
+
+.calculator__square-value-wrapp span {
+  position: relative;
+  /* display: inline-flex; */
+  justify-content: start;
+}
+
+.calculator__square-value-wrapp span::after {
+  content: "2";
+  position: absolute;
+  top: -3px;
+  right: -8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.calculator__square-input {
+  width: 200px; /* Ширина ползунка */
+  height: 20px; /* Высота трека */
+  background-color: rgb(182, 182, 182);
+  border-radius: 4px; /* Закругление трека */
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+.calculator__square-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background: var(--color-primary); /* Цвет бегунка */
+  cursor: pointer;
+  border: none;
+
+}
+
+.calculator__square-input::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: var(--color-primary); /* Цвет бегунка */
+  border-radius: 4px;
+  cursor: pointer; /* Курсор при наведении */
+  border: none;
+}
+
+
+.calculator__count-value {
+  font-size: 26px;
+  width: 50px;
+  text-align: center;
+}
+
+.calculator__count-btn {
+  /* border: 1px solid black; */
+  background-color: var(--color-primary);
+  border-radius: 8px;
+  width: 40px;
+  height: 40px;
+  color: var(--text-color-4);
+  font-size: 24px;
+  /* background-color: var(--color-bg-1); */
+  transition: .3s;
+  pointer-events: auto;
+}
+.light-plus:hover {
+  transform: scale(1.05);
+}
+.light-minus:hover {
+  transform: scale(1.05);
+}
+.corner-plus:hover {
+  transform: scale(1.05);
+}
+.corner-minus:hover {
+  transform: scale(1.05);
+}
+
+.calculator__price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* align-items: end; */
+}
+.calculator__price-block {
+  display: flex;
+  align-items: center;
+  text-wrap: nowrap;
+  margin-bottom: 5px;
+}
+.calculator__price-title {
+  font-size: clamp(10px, 26px, 6vw);
+  color: var(--text-color-1);
+  font-weight: 500;
+  margin-right: 5px;
+}
+.calculator__price-value {
+  font-size: clamp(10px, 32px, 7vw);
+  font-weight: 700;
+  color: var(--color-primary);
+}
+.calculator__notice {
+  font-size: clamp(18px, 20px, 2.7vw);
+  font-weight: 500;
+  color: var(--text-color-2);
+  text-align: center;
+}
+.calculator__notice a {
+  color: var(--text-color-1);
+  font-weight: 700;
+  text-decoration: underline;
+  transition: .3s;
+}
+.calculator__notice a:hover {
+  color: var(--color-hover);
+}
+
+/* CONTACTS ================================================== */
+/* CONTACTS ================================================== */
+.contacts__block {
+  display: flex;
+  align-items: start;
+  column-gap: 20px;
+}
+
+.contacts__card {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  margin-bottom: 20px;
+  border-radius: 0 16px 16px 0;
+  background-color: var(--color-bg-1);
+  padding: 30px 30px 30px 60px;
+  border-left: 6px solid var(--color-primary);
+  height: 165px;
+}
+.contacts__col {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 49%;
+  /* border-left: 10px solid var(--color-primary); */
+}
+.contacts__col--big {
+  width: 100%;
+}
+
+.contacts__card-header {
+  margin-left: -40px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.contacts__icon img {
+  width: 35px;
+  height: 35px;
+}
+
+.contacts__title {
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.contacts__subtitle {
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.contacts__links {
+  display: flex;
+  flex-direction: column;
+}
+.contacts__link {
+  font-size: clamp(21px, 24px, 6vw);
+  font-weight: 500;
+  margin-bottom: 5px;
+  transition: .3s;
+}
+.contacts__link:hover {
+  color: var(--color-hover);
+}
+
+.contacts__lcon-max {
+  transform: scale(1.25);
+}
+
+/* FOOTER ================================================== */
+/* FOOTER ================================================== */
+
+.footer {
+  padding: 30px 0;
+  background: #2e2e2e;
+  overflow: hidden;
+}
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__copyright {
+  /* font-weight: 200; */
+  padding-top: 5px;
+  color: var(--text-color-4);
+}
+
+
+/* ADAPTIVE ======================================================== */
+/* ADAPTIVE ======================================================== */
+
+@media (max-width: 1100px) {
+  /* GLOBAL ===================== */
+  /* HEADER ===================== */
+  .header__nav {
+    display: none;
+  }
+  .header__banner {
+    padding: 10% 0;
+  }
+  /* CEILING ==================== */
+  /* GALERY ===================== */
+  /* CALCULATOR ================= */
+  /* CONTACTS =================== */
+  /* FOOTER ===================== */
+}
+
+@media (max-width: 992px) {
+  /* GLOBAL ===================== */
+  .section-padding {
+    padding: 10% 0;
+  }
+  /* HEADER ===================== */
+  /* CEILING ==================== */
+  
+  .ceiling.section-padding {
+    padding-bottom: 0;
+  }
+  .ceiling__tabs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+    gap: 5px;
+  }
+  .ceiling__tab {
+    width: auto;
+  }
+  .ceiling__tab-button {
+    border-radius: 8px;
+  }
+  
+  .ceiling__top {
+    flex-direction: column;
+    /* margin-bottom: 15px; */
+  }
+  .ceiling__top-column {
+    width: auto;
+  }
+  .ceiling__top-image-wrapp {
+    /* order: 1; */
+    display: none;
+  }
+  .ceiling__info {
+    margin-bottom: 15px;
+  }
+  .ceiling__bottom {
+    flex-wrap: wrap;
+    row-gap: 15px;
+  }
+  .ceiling__bottom-image {
+    width: 49%;
+  }
+  
+  /* GALERY ===================== */
+  /* CALCULATOR ================= */
+  /* CONTACTS =================== */
+  /* FOOTER ===================== */
+}
+
+@media (max-width: 768px) {
+  /* GLOBAL ===================== */
+  /* HEADER ===================== */
+  .header__banner {
+    padding: 15% 0;
+  }
+  .header__top-button {
+    display: none;
+  }
+  .header__phones {
+    margin: 0;
+  }
+  /* CEILING ==================== */
+
+  /* GALERY ===================== */
+  /* CALCULATOR ================= */
+  .calculator__form {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-items: center; */
+    
+  }
+  .calculator__block:first-child {
+    grid-column: span 2;
+  }
+  .calculator__block:last-child {
+    /* justify-self: end; */
+  }
+  .calculator__tabs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+    row-gap: 5px;
+    column-gap: 15px;
+    margin-bottom: 15px;
+  }
+  .calculator__tab {
+    margin: 0;
+  }
+  .calculator__tab-button {
+    text-align: center;
+  }
+  /* CONTACTS =================== */
+  .contacts__col {
+    width: 100%;
+  }
+  .contacts__block {
+    flex-direction: column;
+  }
+  .contacts__title {
+    display: none;
+  }
+  /* FOOTER ===================== */
+}
+
+@media (max-width: 650px) {
+  /* GALLERY =========== */
+  .gallery__slider {
+    height: 350px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* GLOBAL ===================== */
+
+  .section-padding {
+    padding: 15% 0;
+  }
+  /* HEADER ===================== */
+  .header__banner {
+    padding: 15% 0;
+  }
+  .header__heading {
+    text-align: center;
+    /* font-size: clamp(10px, 62px, 8.3vw); */
+  }
+  .header__benefits {
+    text-align: center;
+  }
+  .header__benefit {
+    margin-bottom: 5.5%;
+    display: inline-block;
+  }
+  
+  .header__banner-button-wrapp {
+    display: flex;
+    justify-content: center;
+  }
+  /* CEILING ==================== */
+  .ceiling__tabs {
+    grid-template-columns: 1fr 1fr;
+  }
+  .ceiling__tab-button {
+    padding: 10px 0;
+  }
+  /* GALERY ===================== */
+  /* CALCULATOR ================= */
+  .calculator__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .calculator__tabs {
+    gap: 5px;
+    margin: 0;
+  }
+  .calculator__tab-button {
+    padding: 5px;
+    
+  }
+  .calculator__inputs {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  /* CONTACTS =================== */
+
+  /* FOOTER ===================== */
+}
+
+@media (max-width: 480px) {
+  /* GLOBAL ===================== */
+  .button {
+    padding: 5% 8%;
+  }
+  .heading {
+    margin-bottom: 15px
+  }
+  /* HEADER ===================== */
+  .header__logo-wrapp {
+    margin-right: 0;
+    width: 40vw;
+  }
+  .header__logo-wrapp img {
+    width: 40vw;
+  }
+  .header__heading {
+    font-size: clamp(10px, 62px, 11.3vw);
+  }
+  
+  /* CEILING ==================== */
+  .ceiling__desc-item::before {
+    top: 50%;
+    width: 6px;
+    height: 6px;
+  }
+  .ceiling__info * {
+    margin-bottom: 15px;
+  }
+  /* GALERY ===================== */
+  
+  .gallery__pagination.swiper-pagination .swiper-pagination-bullet {
+    margin: 0 3px;
+  }
+
+  /* CALCULATOR ================= */
+  /* CONTACTS =================== */
+  /* FOOTER ===================== */
+  .footer__logo {
+    width: 29vw;
+    margin-right: 15px;
+  }
+}
+
+
+
+
+
+
+
+/* GLOBAL ===================== */
+/* HEADER ===================== */
+/* CEILING ==================== */
+/* GALERY ===================== */
+/* CALCULATOR ================= */
+/* CONTACTS =================== */
+/* FOOTER ===================== */
+
+
+
+
