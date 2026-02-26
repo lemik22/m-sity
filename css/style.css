@@ -43,7 +43,7 @@
 .button-text {
   color: var(--text-color-4);
   /* font-size: 24px; */
-  font-size: clamp(10px, 24px, 4vw);
+  font-size: clamp(10px, 24px, 5.5vw);
   font-weight: 500;
   white-space: nowrap;
 }
