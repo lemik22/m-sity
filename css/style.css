@@ -718,7 +718,7 @@
 }
 
 .contacts__subtitle {
-  font-size: 26px;
+  font-size: clamp(15px, 24px, 6vw);
   font-weight: 500;
 }
 
@@ -727,7 +727,7 @@
   flex-direction: column;
 }
 .contacts__link {
-  font-size: clamp(21px, 24px, 6vw);
+  font-size: clamp(13px, 24px, 5vw);
   font-weight: 500;
   margin-bottom: 5px;
   transition: .3s;
@@ -885,9 +885,14 @@
   .contacts__block {
     flex-direction: column;
   }
+  .contacts__card {
+    padding: 5% 10% 5% 60px;
+    height: auto;
+  }
   .contacts__title {
     display: none;
   }
+  
   /* FOOTER ===================== */
 }
 
@@ -997,6 +1002,17 @@
 
   /* CALCULATOR ================= */
   /* CONTACTS =================== */
+  .contacts__card-header {
+    margin-bottom: 5px;
+  }
+  .contacts__card {
+    margin-bottom: 10px;
+  }
+  
+  .contacts__icon img {
+    width: 32px;
+    height: 32px;
+  }
   /* FOOTER ===================== */
   .footer__logo {
     width: 29vw;
