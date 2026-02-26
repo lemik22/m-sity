@@ -974,7 +974,7 @@
     width: 40vw;
   }
   .header__heading {
-    font-size: clamp(10px, 62px, 11.3vw);
+    font-size: clamp(10px, 62px, 12.3vw);
   }
   .header__phone {
     font-size: clamp(10px, 25px, 5.2vw);
